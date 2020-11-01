@@ -1,7 +1,7 @@
 console.log('hogehoge');
 
 var digit1='', digit2='', digit3=''
-var IP='http;//192.168.3.'
+var IP='http://192.168.3.'
 $('.form-control').change(function() {
     // 選択されているvalueを取り出す
     digit1 = $('#FormControlSelect1').val();
