@@ -16,19 +16,19 @@ $('.form-control').change(function() {
 
 $(function() {
     $('.ON').on('click',function() {
+        navigator.vibrate(1000);
         fetch(IP+digit1+digit2+digit3+'/H',{mode: 'no-cors'})
         .then(response => response.text())
         .then(text => {
             console.log(text);
         });
-        navigator.vibrate(500);
     });
     $('.OFF').on('click',function() {
+        navigator.vibrate(1000);
         fetch(IP+digit1+digit2+digit3+'/L',{mode: 'no-cors'})
         .then(response => response.text())
         .then(text => {
             console.log(text);
         });
-        navigator.vibrate(500);
     });
   });
