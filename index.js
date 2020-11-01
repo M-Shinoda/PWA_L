@@ -21,6 +21,7 @@ $(function() {
         .then(text => {
             console.log(text);
         });
+        navigator.vibrate(500);
     });
     $('.OFF').on('click',function() {
         fetch(IP+digit1+digit2+digit3+'/L',{mode: 'no-cors'})
@@ -28,5 +29,6 @@ $(function() {
         .then(text => {
             console.log(text);
         });
+        navigator.vibrate(500);
     });
   });
