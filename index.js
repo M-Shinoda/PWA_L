@@ -16,14 +16,14 @@ $('.form-control').change(function() {
 
 $(function() {
     $('.ON').on('click',function() {
-        fetch(IP+digit1+digit2+digit3+'/L',{redirect: 'manual'})
+        fetch(IP+digit1+digit2+digit3+'/L',{mode: 'no-cors'})
         .then(response => response.text())
         .then(text => {
             console.log(text);
         });
     });
     $('.OFF').on('click',function() {
-        fetch(IP+digit1+digit2+digit3+'/H',{redirect: 'manual'})
+        fetch(IP+digit1+digit2+digit3+'/H',{mode: 'no-cors'})
         .then(response => response.text())
         .then(text => {
             console.log(text);
